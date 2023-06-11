@@ -1,0 +1,2 @@
+#include<stdio.h>
+ int main(){ int m,n; scanf("%d%d",&m,&n); int arry[m][n]; for(int i = 0; i < m; i++){ for(int j = 0; j < n; j++){ scanf("%d",&arry[i][j]); } } int a,b; scanf("%d%d",&a,&b); a--; b--; for(int i = 0; i < m; i++){ int v = arry[i][a]; arry[i][a] = arry[i][b]; arry[i][b] = v; } for(int i = 0; i < m; i++){ for(int j = 0; j < n; j++){ printf("%d ",arry[i][j]); } printf("\n"); } }
